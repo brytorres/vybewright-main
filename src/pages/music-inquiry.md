@@ -1,14 +1,10 @@
 ---
 layout: ../layouts/Layout.astro
 ---
-<!-- Markdown Preview - https://dillinger.io/ -->
 
-If your business inquiry is about wanting advice for YouTube or a startup idea or if you want to get me involved in what you're doing or want to collab on some videos or a project or whatever I would direct you here.
+If you're interested in me playing live music at one of your events or establishments, I'm all for it. Gotta spread the vybes throughout the world. All I need is a left and right output cable and we'll make the magic happen. [Fill this form out](https://forms.gle/BZMRw4rnyiDohynr8) with your info and I'll reach out soon as possible.
 
 ​
 
-If this is for a speaking engagement or appearance or brand work or anything like that you should reach out to WME.  They're great, I've been working with them for years.
+I also can help with any audio mixing, producing, writing, or even just helping source out information and cool people. You can check out my [mixing and production catalog](https://www.vybewright.com) and then [Fill the form out](https://forms.gle/BZMRw4rnyiDohynr8).
 
- 
-
-thank you very much.
