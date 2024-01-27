@@ -6,5 +6,5 @@ If you're interested in me playing live music at one of your events or establish
 
 ​
 
-I also can help with any audio mixing, producing, writing, or even just helping source out information and cool people. You can check out my [mixing and production catalog](https://www.vybewright.com) and then [Fill the form out](https://forms.gle/BZMRw4rnyiDohynr8).
+I also can help with any audio mixing, producing, writing, or even just helping source out information and cool people. You can check out my [mixing and production catalog](https://www.vybewright.com) and [fill the form out](https://forms.gle/BZMRw4rnyiDohynr8) if you want to move forward.
 
