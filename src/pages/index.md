@@ -1,17 +1,19 @@
 ---
 layout: ../layouts/Layout.astro
-title: Nice Tat Astro Template
+title: Vybewright Home Page
 ---
 <!-- Markdown Preview - https://dillinger.io/ -->
 
-# Nice Tat Astro Template
+# Vybewright
 
-[youtube](https://www.youtube.com/watch?v=sEyHnHjhlr4)
+[music](https://www.google.com)
 
-[instagram](https://www.instagram.com/caseyneistat/)
+---
 
-[onlyfans](/onlyfans)
+[youtube](https://www.youtube.com/@vybewright/streams)
 
-[twitter](https://twitter.com/Casey)
+[mastadon](https://sunny.garden/@vybewright)
 
-[contact](/contact)
+[instagram](https://www.instagram.com/vybewright/)
+
+[connect](/connect)
