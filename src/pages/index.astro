@@ -37,16 +37,16 @@ const isHome = Astro.url.pathname === '/'
         <h1>Vybewright</h1>
 
         <p><a href="https://www.google.com">music</a></p>
-        <p><a href="https://www.youtube.com/@vybewright/streams">youtube</a></p>
+        <p class="pb-6"><a href="https://www.youtube.com/@vybewright/streams">youtube</a></p>
 
         <hr>
 
-        <p><a href="/blog">blog</a></p>
+        <p class="pt-8"><a href="/blog">blog</a></p>
         <p><a href="https://sunny.garden/@vybewright">mastadon</a></p>
-        <p><a href="https://www.instagram.com/vybewright/">instagram</a></p>
+        <p class="pb-6"><a href="https://www.instagram.com/vybewright/">instagram</a></p>
 
         <hr>
-        <p><a href="/connect">connect</a></p>
+        <p class="pt-8"><a href="/connect">connect</a></p>
 
     </main>
 
@@ -104,11 +104,6 @@ const isHome = Astro.url.pathname === '/'
                 Bitstream Vera Sans Mono,
                 Courier New,
                 monospace;
-    }
-
-    hr {
-        padding-bottom: 12px;
-        padding-top: 12px;
     }
 
     h1 {
