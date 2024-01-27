@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Layout.astro
+layout: ../layouts/Home.astro
 title: Vybewright Home Page
 ---
 <!-- Markdown Preview - https://dillinger.io/ -->
@@ -8,12 +8,16 @@ title: Vybewright Home Page
 
 [music](https://www.google.com)
 
+[youtube](https://www.youtube.com/@vybewright/streams)
+
 ---
 
-[youtube](https://www.youtube.com/@vybewright/streams)
+[blog](/blog)
 
 [mastadon](https://sunny.garden/@vybewright)
 
 [instagram](https://www.instagram.com/vybewright/)
+
+---
 
 [connect](/connect)
