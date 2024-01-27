@@ -3,6 +3,8 @@ layout: ../layouts/Layout.astro
 ---
 <!-- Markdown Preview - https://dillinger.io/ -->
 
-are you trying to contact me for a
+Let's connect. You can reach me at [mail@vybewright.com](mailto:mail@vybewright.com).    
 
-[business inquiry](/business-inquiry) or [something else](/something-else)?
+If you want in-depth info, are you connecting for a
+
+[music inquiry](/music-inquiry), [tech inquiry](/tech-inquiry), or a [random comment](/random-comment)?
