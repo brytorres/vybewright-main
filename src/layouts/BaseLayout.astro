@@ -1,0 +1,37 @@
+---
+
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
+import { fade, ViewTransitions } from 'astro:transitions'
+
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+const { pageTitle } = Astro.props;
+
+const isHome = Astro.url.pathname === '/'
+---
+
+<html
+    lang="en"
+    transition:animate={fade({ duration: '1s' })}
+>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{pageTitle}</title>
+    </head>
+    <body class={`text-gray-500 dark:text-gray-100 ${ isHome ? 'is-home' : '' }`}>
+    <div class="flex flex-col h-screen justify-between max-w-5xl mx-auto space-y-4 py-16 px-14 ">
+            <main>
+                <slot />
+            </main>
+
+            <Footer />
+        </div>
+        <!--<script>-->
+        <!--    import "../scripts/menu.js";-->
+        <!--</script>-->
+    </body>
+</html>
