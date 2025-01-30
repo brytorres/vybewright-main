@@ -1,0 +1,51 @@
+html {
+    font-family: "JetBrains Mono", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.2rem;
+    background: #13151a;
+    background-size: 224px;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    html {
+        background: #fff;
+    }
+}
+
+/* We want to bump up the font size on touch screens so that tap targets are easier to hit */
+@media (hover: none) {
+
+    main {
+        font-size: 18px;
+    }
+
+    /* Pad links that are the only child of a paragraph */
+    p > a:only-child {
+        padding: 0.5rem 0;
+        display: inline-block;
+    }
+}
+code {
+    font-family:
+            Menlo,
+            Monaco,
+            Lucida Console,
+            Liberation Mono,
+            DejaVu Sans Mono,
+            Bitstream Vera Sans Mono,
+            Courier New,
+            monospace;
+}
+
+h1 {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+body:not(.is-home) a {
+    text-decoration: underline;
+}

@@ -13,7 +13,7 @@ importers:
         version: 0.2.1(typescript@5.2.2)
       '@astrojs/tailwind':
         specifier: ^5.0.2
-        version: 5.0.2(astro@3.4.0)(tailwindcss@3.3.5)
+        version: 5.0.2(astro@3.4.0(typescript@5.2.2))(tailwindcss@3.3.5)
       '@fontsource/jetbrains-mono':
         specifier: ^5.0.17
         version: 5.0.17
@@ -21,7 +21,7 @@ importers:
         specifier: ^3.4.0
         version: 3.4.0(typescript@5.2.2)
       tailwindcss:
-        specifier: ^3.0.24
+        specifier: ^3.3.5
         version: 3.3.5
       typescript:
         specifier: ^5.2.2
@@ -681,8 +681,8 @@ packages:
     resolution: {integrity: sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==}
     engines: {node: '>=14.16'}
 
-  caniuse-lite@1.0.30001555:
-    resolution: {integrity: sha512-NzbUFKUnJ3DTcq6YyZB6+qqhfD112uR3uoEnkmfzm2wVzUNsFkU7AwBjKQ654Sp5cau0JxhFyRSn/tQZ+XfygA==}
+  caniuse-lite@1.0.30001696:
+    resolution: {integrity: sha512-pDCPkvzfa39ehJtJ+OwGT/2yvT2SbjfHhiIW2LWOAcMQ7BzwxT/XuyUp4OTOd0XFWA6BKw0JalnBHgSi5DGJBQ==}
 
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -2272,7 +2272,7 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@astrojs/markdown-remark@3.3.0(astro@3.4.0)':
+  '@astrojs/markdown-remark@3.3.0(astro@3.4.0(typescript@5.2.2))':
     dependencies:
       '@astrojs/prism': 3.0.0
       astro: 3.4.0(typescript@5.2.2)
@@ -2296,7 +2296,7 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/tailwind@5.0.2(astro@3.4.0)(tailwindcss@3.3.5)':
+  '@astrojs/tailwind@5.0.2(astro@3.4.0(typescript@5.2.2))(tailwindcss@3.3.5)':
     dependencies:
       astro: 3.4.0(typescript@5.2.2)
       autoprefixer: 10.4.16(postcss@8.4.31)
@@ -2786,7 +2786,7 @@ snapshots:
     dependencies:
       '@astrojs/compiler': 2.2.1
       '@astrojs/internal-helpers': 0.2.1
-      '@astrojs/markdown-remark': 3.3.0(astro@3.4.0)
+      '@astrojs/markdown-remark': 3.3.0(astro@3.4.0(typescript@5.2.2))
       '@astrojs/telemetry': 3.0.4
       '@babel/core': 7.23.2
       '@babel/generator': 7.23.0
@@ -2857,7 +2857,7 @@ snapshots:
   autoprefixer@10.4.16(postcss@8.4.31):
     dependencies:
       browserslist: 4.22.1
-      caniuse-lite: 1.0.30001555
+      caniuse-lite: 1.0.30001696
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -2910,7 +2910,7 @@ snapshots:
 
   browserslist@4.22.1:
     dependencies:
-      caniuse-lite: 1.0.30001555
+      caniuse-lite: 1.0.30001696
       electron-to-chromium: 1.4.569
       node-releases: 2.0.13
       update-browserslist-db: 1.0.13(browserslist@4.22.1)
@@ -2930,7 +2930,7 @@ snapshots:
 
   camelcase@7.0.1: {}
 
-  caniuse-lite@1.0.30001555: {}
+  caniuse-lite@1.0.30001696: {}
 
   ccount@2.0.1: {}
 
@@ -4060,8 +4060,9 @@ snapshots:
   postcss-load-config@4.0.1(postcss@8.4.31):
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.31
       yaml: 2.3.3
+    optionalDependencies:
+      postcss: 8.4.31
 
   postcss-nested@6.0.1(postcss@8.4.31):
     dependencies:
@@ -4489,7 +4490,7 @@ snapshots:
   ts-interface-checker@0.1.13: {}
 
   tsconfck@3.0.0(typescript@5.2.2):
-    dependencies:
+    optionalDependencies:
       typescript: 5.2.2
 
   tunnel-agent@0.6.0:
@@ -4633,44 +4634,48 @@ snapshots:
       fsevents: 2.3.3
 
   vitefu@0.2.5(vite@4.5.0):
-    dependencies:
+    optionalDependencies:
       vite: 4.5.0
 
   volar-service-css@0.0.14(@volar/language-service@1.10.7):
     dependencies:
-      '@volar/language-service': 1.10.7
       vscode-css-languageservice: 6.2.10
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 1.10.7
 
   volar-service-emmet@0.0.14(@volar/language-service@1.10.7):
     dependencies:
-      '@volar/language-service': 1.10.7
       '@vscode/emmet-helper': 2.9.2
       volar-service-html: 0.0.14(@volar/language-service@1.10.7)
+    optionalDependencies:
+      '@volar/language-service': 1.10.7
 
   volar-service-html@0.0.14(@volar/language-service@1.10.7):
     dependencies:
-      '@volar/language-service': 1.10.7
       vscode-html-languageservice: 5.1.1
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 1.10.7
 
   volar-service-prettier@0.0.14(@volar/language-service@1.10.7):
-    dependencies:
+    optionalDependencies:
       '@volar/language-service': 1.10.7
 
   volar-service-typescript-twoslash-queries@0.0.14(@volar/language-service@1.10.7):
-    dependencies:
+    optionalDependencies:
       '@volar/language-service': 1.10.7
 
   volar-service-typescript@0.0.14(@volar/language-service@1.10.7)(@volar/typescript@1.10.7):
     dependencies:
-      '@volar/language-service': 1.10.7
       '@volar/typescript': 1.10.7
       semver: 7.5.4
       typescript-auto-import-cache: 0.3.0
       vscode-languageserver-textdocument: 1.0.11
       vscode-nls: 5.2.0
       vscode-uri: 3.0.8
+    optionalDependencies:
+      '@volar/language-service': 1.10.7
 
   vscode-css-languageservice@6.2.10:
     dependencies:
