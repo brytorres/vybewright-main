@@ -24,7 +24,6 @@ const isHome = Astro.url.pathname === '/'
         <title>{pageTitle}</title>
     </head>
     <body class={`text-gray-500 dark:text-gray-100 ${ isHome ? 'is-home' : '' }`}>
-    <img src="https://tracker.metricool.com/c3po.jpg?hash=4f1eb8e7ac69fc2efd2c8fe6812dea11"/>
     <div class="flex flex-col h-screen justify-between max-w-5xl mx-auto space-y-4 py-16 px-14 ">
             <main>
                 <slot />
@@ -35,5 +34,6 @@ const isHome = Astro.url.pathname === '/'
         <!--<script>-->
         <!--    import "../scripts/menu.js";-->
         <!--</script>-->
+        <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"4f1eb8e7ac69fc2efd2c8fe6812dea11"})});</script>
     </body>
 </html>
